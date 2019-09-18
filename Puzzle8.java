@@ -28,6 +28,10 @@ class Node
         }
         return true;
     }
+    public int hashCode()
+    {
+        return Arrays.deepHashCode(puzzle);
+    }
     public void print()
     {
         System.out.println("**********");
